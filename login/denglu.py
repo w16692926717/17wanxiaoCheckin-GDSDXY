@@ -462,7 +462,7 @@ def check_in(username, password, device_id):
         "method": "userComeApp",
     }
     post_dict = get_post_json(json1)
-
+##################################################################此处按照此格式修改来修改打卡定位地址############################################################################
     if post_dict:
         post_dict['areaStr'] = '{"streetNumber":"81号","street":"天润路","district":"天河区","city":"广州市","province":"广东省",' \
                                '"town":"","pois":"广东水利电力职业技术学院(天河校区)","lng":113.34210100000075,' \
@@ -470,6 +470,7 @@ def check_in(username, password, device_id):
                                '"code":""} '
         healthy_check_dict = healthy_check_in(token, username, post_dict)
         check_dict_list.append(healthy_check_dict)
+###############################################################################################################################################################################
     else:
         # 获取第二类健康打卡参数
         post_dict = get_recall_data(token)
