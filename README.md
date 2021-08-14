@@ -48,6 +48,7 @@
 - 打卡用户配置文件是：`name.py`
 - 位置配置，可抓包后修改其他的位置：`login/denglu.py`
 - 推送信息文案配置：`xinxi/server.py`
+- 多人打卡设置：`run.py`
 
 ## 🍗食用方法
 
